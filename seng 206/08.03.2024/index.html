@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 2</title>
+    <style>
+      .bg_color {
+        background-color: aqua;
+      }
+        .red_font {
+            color: red;
+        }
+        .blue_font {
+            color: blue;
+        }
+        table {
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+    }
+    ul.a {list-style-type: disc;}
+    ul.b {list-style-type: circle;}
+    ul.c {list-style-type: square;}
+    ul.d {list-style-type: none;}
+    </style>
+</head>
+<body class="bg_color">
+    <h1>HTML5 Document Structure Example</h1>
+    <p>This page demonstrates how some html elements work.</p>
+    <hr>
+    <ul>
+        <li><a href="#1">Text formatting elements</a></li>
+        <li><a href="#2">Table element</a></li>
+        <li><a href="#3">Ordered List element</a></li>
+        <li><a href="#4">Unordered List element</a></li>
+        <li><a href="#5">&ltscript&gt and &ltlink&gt elements</a></li>
+        <li><a href="#6">&ltdiv&gt element</a></li>
+        <li><a href="#7">HTML Forms</a></li>     
+        <li><a href="#8">&ltvideo&gt element</a></li>
+        <li><a href="#9">&ltaudio&gt element</a></li>
+      </ul>
+      <p><span class="red_font">NOTE:</span> Attributes may only be specified withing <i><u>opening tags</u></i> and must never be used in <i><u>closing tags.</u></i></p>
+      <hr>
+      <h3 id="1">Text formatting elements</h3>
+      <p>In this example we use <b>bold</b> <span class ="red_font"><i>italicized </i></span><u>underlined</u> text.
+        If we want we can higlight or <del>delete</del> the given text. We can use superscript (x<sup>power</sup>) or
+     subscript x(<sub>index</sub>) elements to write math formulas: y = x<sub>1</sub><sup>3</sup> + x<sub>2</sub><sup>2</sup> + x<sub>3</sub></p>
+     <hr>
+     <h3 id="2">Table element</h3>
+     <table style>
+        <caption>Table Caption</caption>
+        <tr>
+          <th>Column 1</th>
+          <th>Column 2</th>
+          <th>Column 3</th>
+        </tr>
+        <tr>
+          <td>(1,1)</td>
+          <td>(1,2)</td>
+          <td>(1,3)</td>
+        </tr>
+        <tr>
+          <td>(2,1)</td>
+          <td>(2,2)</td>
+          <td>(2,3)</td>
+        </tr>
+        <tr>
+          <td>(3,1)</td>
+          <td rowspan="2" colspan="2">(3,2)</td>
+        </tr>
+        <tr>
+            <td>(4,1)</td>
+          </tr>
+      </table>
+      <hr>
+      <h3 id = "3">&ltold&gt&lt/ol&gt - Ordered List element</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolor cupiditate quisquam officia possimus, recusandae, quod, iste architecto eveniet error blanditiis accusamus repudiandae deleniti pariatur illum. Amet alias expedita illum.</p>
+
+      <table style>
+        <caption>Caption: &ltol&gt - types</caption>
+        <tr>
+          <th>Type</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>type="1"</td>
+          <td><ol type="1" start="56"> 
+            <li>item 1</li> 
+            <li>item 2</li> 
+            <li>item 3</li> 
+            <li>item 4</li> 
+            <li>item 5</li> 
+        </ol> </td>
+        </tr>
+        <tr>
+            <td>type="i"</td>
+            <td><ol type="i" start="5"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ol> </td>
+          </tr>
+          <tr>
+            <td>type="I"</td>
+            <td><ol type="I"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ol> </td>
+          <tr>
+            <td>type="a"</td>
+            <td><ol type="a" start="6"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ol> </td>
+          </tr>
+          <tr>
+            <td>type="A"</td>
+            <td><ol type="A"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ol> </td>
+          </tr>
+      </table>
+      <hr>
+      <h3 id="4">&ltul&gt&lt/ul&gt - Unordered List element</h3>
+      <table style>
+        <caption>Caption: &ltul&gt - types</caption>
+        <tr>
+          <th>Type</th>
+          <th>Example</th>
+        </tr>
+        <tr>
+          <td>list-style-type:disc</td>
+          <td><ul class="a"> 
+            <li>item 1</li> 
+            <li>item 2</li> 
+            <li>item 3</li> 
+            <li>item 4</li> 
+            <li>item 5</li> 
+        </ul> </td>
+        </tr>
+        <tr>
+            <td>list-style-type:circle</td>
+            <td><ul class="b"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ul> </td>
+          </tr>
+          <tr>
+            <td>list-style-type:square</td>
+            <td><ul class="c"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ul> </td>
+          </tr>
+          <tr>
+            <td>list-style-type:none</td>
+            <td><ul class="d"> 
+              <li>item 1</li> 
+              <li>item 2</li> 
+              <li>item 3</li> 
+              <li>item 4</li> 
+              <li>item 5</li> 
+          </ul> </td>
+          </tr>
+      </table>
+      <hr>
+      <h3 id = "5">&ltscript&gt and &ltlink&gt elements</h3>
+      <table style>
+        <tr>
+          <th>Element</th>
+          <th>Before</th>
+          <th>HTML5</th>
+        </tr>
+        <tr>
+          <td>&ltscript&gt</td>
+          <td>
+            <pre><code>&ltscript type="text/javascript" src="scriptfile.js"&gt&lt/script&gt</code></pre>
+            <td>
+                <pre><code>&ltscript src="scriptfile.js"&gt&lt/script&gt</code></pre>
+            </td>
+        </tr>
+        <tr>
+            <td>&ltlink&gt</td>
+            <td>
+                <pre><code>&ltlink rel="stylesheet" type="text/css" href="stylefile.css"&gt</code></pre>
+            </td>
+            <td>
+                <pre><code>&ltlink rel="stylesheet" href="stylefile.css"&gt</code></pre>
+            </td>
+        </tr>
+      </table>
+      <hr>
+      <h3 id = "6">&ltdiv&gt element</h3>
+      <div class="red_font">
+        This is a div
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet illum corporis, accusantium possimus deleniti fugiat consequuntur maiores atque repellendus quae architecto distinctio repudiandae corrupti unde, ipsa expedita velit. Nemo, temporibus.
+        </p>
+    </div>
+    <div class="blue_font">
+        This is another div
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, quisquam, alias perferendis reiciendis placeat eius tenetur laboriosam, atque unde optio voluptatum. Qui quasi aliquam perspiciatis, delectus voluptatum magnam tenetur deserunt repellendus accusamus temporibus sit error voluptatem beatae fugit sapiente voluptates rerum unde a. Ex harum perspiciatis culpa? Quisquam consequatur provident, mollitia autem perspiciatis aperiam ad, delectus quis fuga veritatis architecto omnis enim deleniti? Eius accusamus mollitia quidem ea. Corporis quaerat reiciendis ut, impedit hic consequatur accusamus molestiae repellat, temporibus aperiam incidunt earum aliquid magni. Quisquam ea quidem quod sint. Reiciendis rem ut quia unde ipsum officia aliquid iusto quisquam at.
+        </p>
+    </div>
+    <hr>
+    <h3 id ="7">HTML Forms</h3>
+    <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank" style="margin-left: 40px;">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <label for="email">email:</label><br>
+        <input type="email" id="email" name="email" value="email@example.com"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(###)-###-##-##"
+            pattern="\(\d{3}\)-\d{3}-\d{2}-\d{2}" required><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        <label for="color">Color:</label><br>
+        <input type="color" id="color" name="color" value="blue"><br>
+        <input type="submit" value="Submit">
+        <button type="submit" >Submit</button>
+    </form>
+
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    <hr>
+    <h3 id="8"> Video</h3>
+    <p>
+        <video width="320" height="240" controls>
+            <source src="seng206-week2/items/video/marti.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </p>
+        <p>
+            <h3 id="9">Audio</h3>
+            <audio controls>
+                <source src="seng206-week2/items/audio/horse.ogv" type="audio/ogg">
+                <source src="seng206-week2/items/audio/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            </p>
+        <p>Created in the scope of SENG-206</p>
+</body>
+</html>
